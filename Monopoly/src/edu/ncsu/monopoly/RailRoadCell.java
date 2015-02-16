@@ -30,4 +30,16 @@ public class RailRoadCell extends Cell {
 			}
 		}
 	}
+
+	@Override
+	public Player getTheOwner() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setTheOwner(Player owner) {
+		// TODO Auto-generated method stub
+		
+	}
 }

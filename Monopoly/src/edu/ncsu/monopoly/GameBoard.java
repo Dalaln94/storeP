@@ -13,7 +13,7 @@ public class GameBoard {
 	private GameMaster gameMaster;
 	
 	public GameBoard() {
-		Cell go = new GoCell();
+		Monopolyinterfacee go = new GoCell();
 		addCell(go);
 	}
 
@@ -25,11 +25,12 @@ public class GameBoard {
         }
     }
 	
-	public void addCell(Cell cell) {
+	public void addCell(Monopolyinterfacee cell) {
 		cells.add(cell);
 	}
 	
 	public void addCell(PropertyCell cell) {
+		String colorGroup = cell.getColorGroup();
 		int propertyNumber = getPropertyNumberForColor(cell.getColorGroup());
 		colorGroups.put(cell.getColorGroup(), new Integer(propertyNumber + 1));
         cells.add(cell);

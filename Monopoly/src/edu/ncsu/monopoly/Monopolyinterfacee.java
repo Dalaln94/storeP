@@ -1,6 +1,9 @@
 package edu.ncsu.monopoly;
 
-public class Monopolyinterfacee {
-      //This is The interface
-	
+public interface Monopolyinterfacee {
+
+	public abstract Player getTheOwner();
+
+	public abstract void setTheOwner(Player owner);
+
 }
