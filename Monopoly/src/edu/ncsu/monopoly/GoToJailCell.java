@@ -23,4 +23,6 @@ public class GoToJailCell extends Cell {
 		// TODO Auto-generated method stub
 		
 	}
+
+	
 }

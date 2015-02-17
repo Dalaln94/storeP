@@ -23,4 +23,6 @@ public class GoCell extends Cell {
 		// TODO Auto-generated method stub
 		
 	}
+
+
 }

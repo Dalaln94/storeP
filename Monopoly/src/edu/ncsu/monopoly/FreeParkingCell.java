@@ -21,4 +21,6 @@ public class FreeParkingCell extends Cell {
 		// TODO Auto-generated method stub
 		
 	}
+
+
 }
