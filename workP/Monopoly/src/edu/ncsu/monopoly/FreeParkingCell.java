@@ -7,7 +7,7 @@ public class FreeParkingCell extends Cell {
 	}
 
 	public boolean playAction(String msg) {
-		return false;
+		return true;
 	}
 
 	@Override

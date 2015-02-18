@@ -7,7 +7,7 @@ public class GoCell extends Cell {
 	}
 
 	public boolean playAction(String msg) {
-		return false;
+		return true;
 	}
 	
 	void setName(String name) {

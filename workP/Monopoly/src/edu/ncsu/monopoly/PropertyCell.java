@@ -24,15 +24,15 @@ public class PropertyCell extends Cell {
 
 	public int getRent() {
 		int rentToCharge = rent;
-		String [] monopolies = theOwner.getMonopolies();
-		rentToCharge = calcMonopoliesRent(rentToCharge, monopolies);
+		rentToCharge = calcMonopoliesRent(rentToCharge);
 		if(numHouses > 0) {
 			rentToCharge = rent * (numHouses + 1);
 		}
 		return rentToCharge;
 	}
 
-	private int calcMonopoliesRent(int rentToCharge, String[] monopolies) {
+	private int calcMonopoliesRent(int rentToCharge) {
+		String[] monopolies = theOwner.getMonopolies();
 		for(int i = 0; i < monopolies.length; i++) {
 			if(monopolies[i].equals(colorGroup)) {
 				rentToCharge = rent * 2;
@@ -49,7 +49,7 @@ public class PropertyCell extends Cell {
 				currentPlayer.payRentTo(theOwner, getRent());
 			}
 		}
-		return false;
+		return true;
 	}
 
 	public void setColorGroup(String colorGroup) {
@@ -72,17 +72,5 @@ public class PropertyCell extends Cell {
 		this.rent = rent;
 	}
 
-	@Override
-	public Player getTheOwner() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void setTheOwner(Player owner) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
+	
 }

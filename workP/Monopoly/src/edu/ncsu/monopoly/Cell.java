@@ -17,7 +17,8 @@ public abstract class Cell implements IOwnable {
 	}
 
 
-	
+
+
 	public abstract boolean playAction(String msg);
 	
 	void setName(String name) {
