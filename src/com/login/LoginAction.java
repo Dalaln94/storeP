@@ -16,7 +16,7 @@ import com.opensymphony.xwork2.ActionSupport;
 public class LoginAction extends ActionSupport{
 	
 	/**
-	 * Login Action Class
+	 * Login Action
 	 */
 	private static final long serialVersionUID = 1L;
 	private String user;
@@ -102,6 +102,4 @@ public class LoginAction extends ActionSupport{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
 }
