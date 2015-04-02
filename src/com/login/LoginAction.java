@@ -16,7 +16,7 @@ import com.opensymphony.xwork2.ActionSupport;
 public class LoginAction extends ActionSupport{
 	
 	/**
-	 * Login Action
+	 * Login Acti
 	 */
 	private static final long serialVersionUID = 1L;
 	private String user;
